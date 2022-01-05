@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+:root{
+    --Navy:#112027;
+    --Arctic:#e7e7e7;
+    --Rorange: #ff7f50;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.myName{
+    color: var(--Arctic);
+    font-size: 85px;
+    font-weight: 500;
+    /* margin-bottom: -10px; */
+    line-height: 5rem;
+}
+
+.myTitle{
+    color: var(--Rorange);
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.seeWorkContainer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.pageMoveBtn{
+    margin-bottom: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: transparent;
+    cursor: pointer;
+}
+
+#workBtn{
+    background-color: var(--Rorange);
+}
+#aboutBtn{
+    background-color: var(--Navy);
+}
+#techBtn{
+    background-color: var(--Rorange);
+}
+#contactBtn{
+    background-color: var(--Navy);
+}
+
+#workBtn:hover{
+    background-color: #fe9568;
+}
+
+#aboutBtn:hover{
+    background-color: #31333f;
+}
+
+#techBtn:hover{
+    background-color: #fe9568;
+}
+
+#contactBtn:hover{
+    background-color: #31333f;
+}
+
+
+
+
+.page-containers-navy{
+    background-color: var(--Navy);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-containers-orange{
+    background-color: var(--Rorange);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    .myName{
+        color: var(--Arctic);
+        font-size: 65px;
+        font-weight: 500;
+        margin-bottom: -10px;
+    }
+    
+    .myTitle{
+        color: var(--Rorange);
+        font-size: 25px;
+        font-weight: 300;
+    }
+}
