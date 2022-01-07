@@ -42,12 +42,67 @@ header{
     padding-bottom: 2rem;
 }
 
+#skillItemContainer{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#skillsContainer h1{
+    color: #fff;
+}
+
+.itemHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    min-width: 9rem;
+    max-width: 9rem;
+}
+
+.itemHolder img{
+max-height: 50%;
+}
+
+.itemHolder h2{
+    font-weight: 300;
+    color: #fff;
+}
 #aboutMeContainer{
-    max-width: 750px;
+    max-width: 850px;
     color: #fff;
     font-weight: 300;
 }
 
+#projectsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    min-width: 80%;
+    color: #fff;
+    font-weight: 300;
+    border: olivedrab 1px solid;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 3rem;
+}
+
+
+.projectHolder{
+    max-width: 30%;
+    min-width: 30rem;
+    border: 1px dotted blue;
+    padding: 3rem 3rem;
+    margin: 1rem 2rem;
+}
+.projectHolder img{
+    max-width: 100%;
+}
 .myName{
     color: var(--Arctic);
     font-size: 85px;
@@ -106,6 +161,10 @@ header{
     background-color: #31333f;
 }
 
+#projectsPage{
+    min-height: 100vh;
+}
+
 
 
 
@@ -123,7 +182,7 @@ header{
 .page-containers-orange{
     background-color: var(--Rorange);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
