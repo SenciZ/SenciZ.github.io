@@ -81,6 +81,7 @@ max-height: 50%;
 #projectsContainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1250px;
     min-width: 80%;
