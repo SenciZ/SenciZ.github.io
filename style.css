@@ -110,25 +110,23 @@ max-height: 50%;
 .projectHolder p{
     text-align: left;
 }
+#btnHolder{
+    width: 100%;
+}
 
 .projectHolder button{
     border: 1px #FFF solid;
     min-width: 50px;
     max-width: 20%;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, .125);
+    background-color: rgba(255, 255, 255, 0);
     padding: .25rem;
     color: #FFF;
-}
-
-.projectHolder:hover{
-    transform: scale(110%);
+    margin: 1rem;
 }
 
 .projectHolder button:hover{
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, .0);
-    padding: .5rem;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .myName{
@@ -155,47 +153,8 @@ max-height: 50%;
     bottom: 0;
 }
 
-.pageMoveBtn{
-    margin-bottom: 30px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: transparent;
-    cursor: pointer;
-}
 
-#workBtn{
-    background-color: var(--Rorange);
-}
-#aboutBtn{
-    background-color: var(--Navy);
-}
-#techBtn{
-    background-color: var(--Rorange);
-}
-#contactBtn{
-    background-color: var(--Navy);
-}
 
-#workBtn:hover{
-    background-color: #fe9568;
-}
-
-#aboutBtn:hover{
-    background-color: #31333f;
-}
-
-#techBtn:hover{
-    background-color: #fe9568;
-}
-
-#contactBtn:hover{
-    background-color: #31333f;
-}
-
-#projectsPage{
-    min-height: 100vh;
-}
 
 
 
