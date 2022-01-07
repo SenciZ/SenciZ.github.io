@@ -139,6 +139,10 @@ max-height: 50%;
     line-height: 5rem;
 }
 
+.fab{
+    color: white;
+
+}
 .myTitle{
     color: var(--Rorange);
     font-size: 45px;
@@ -207,6 +211,20 @@ max-height: 50%;
     text-align: center;
 }
 
+.page-containers-navy2{
+    background-color: var(--Navy);
+    width: 100%;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 200;
+}
+.contactPage *{
+    padding: 1rem 1rem;
+}
 .page-containers-orange{
     background-color: var(--Rorange);
     width: 100%;
