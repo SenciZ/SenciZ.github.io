@@ -87,8 +87,6 @@ max-height: 50%;
     color: #fff;
     font-weight: 300;
     border: olivedrab 1px solid;
-    justify-content: center;
-    align-items: center;
     padding: 4rem 3rem;
 }
 
@@ -96,13 +94,43 @@ max-height: 50%;
 .projectHolder{
     max-width: 30%;
     min-width: 30rem;
-    border: 1px dotted blue;
     padding: 3rem 3rem;
     margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .projectHolder img{
     max-width: 100%;
 }
+
+.projectHolder div{
+    align-self: flex-start;
+    max-width: 90%;
+}
+.projectHolder p{
+    text-align: left;
+}
+
+.projectHolder button{
+    border: 1px #FFF solid;
+    min-width: 50px;
+    max-width: 20%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .125);
+    padding: .25rem;
+    color: #FFF;
+}
+
+.projectHolder:hover{
+    transform: scale(110%);
+}
+
+.projectHolder button:hover{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .0);
+    padding: .5rem;
+}
+
 .myName{
     color: var(--Arctic);
     font-size: 85px;
