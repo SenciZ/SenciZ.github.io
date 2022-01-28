@@ -18,10 +18,24 @@ header {
   /* display: flex; */
   /* justify-content: space-around; */
 }
+
 .fas,
 .fa-chevron-down {
   color: white;
   justify-self: flex-end;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #hamburger {
