@@ -15,8 +15,13 @@
   scroll-behavior: smooth;
 }
 header {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+.fas,
+.fa-chevron-down {
+  color: white;
+  justify-self: flex-end;
 }
 
 #hamburger {
@@ -100,6 +105,10 @@ header {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .projectHolder div {
   align-self: flex-start;
   max-width: 90%;
@@ -132,6 +141,7 @@ header {
 .fab {
   color: white;
 }
+
 .myTitle {
   color: var(--Rorange);
   font-size: 45px;
@@ -188,7 +198,7 @@ a + a {
   font-weight: 200;
 }
 .contactPage * {
-  padding: 1rem 1rem;
+  padding-left: 1rem;
 }
 .page-containers-orange {
   background-color: var(--Rorange);
