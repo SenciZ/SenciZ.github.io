@@ -136,6 +136,7 @@ a {
   font-weight: 300;
   color: #fff;
 }
+
 #aboutMeContainer {
   max-width: 850px;
   color: #fff;
@@ -298,7 +299,8 @@ html {
 }
 
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 300px) {
   #aboutMeContainer{
     padding: 3rem;
   }
