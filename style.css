@@ -220,9 +220,7 @@ html {
   padding-top: 2rem;
 }
 
-a + a {
-  margin-left: 25px;
-}
+
 
 .demoButton {
   background-color: transparent;
@@ -258,8 +256,8 @@ a + a {
   color: #fff;
   font-weight: 200;
 }
-.contactPage * {
-  padding-left: 1rem;
+.contactPage {
+  display: flex;
   height: 100vh;
 }
 .page-containers-orange {
@@ -273,6 +271,12 @@ a + a {
   text-align: center;
 }
 
+#socialMediaHolder{
+  padding: 2rem;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 @media only screen and (max-width: 300px) {
