@@ -210,6 +210,12 @@ html {
   font-weight: 300;
 }
 
+.myEmail {
+  color: var(--Rorange);
+  font-size: 35px;
+  font-weight: 300;
+}
+
 .seeWorkContainer {
   position: absolute;
   width: 100%;
