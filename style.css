@@ -24,7 +24,6 @@ header {
   z-index: 100;
   top: 2rem;
   right: 2rem;
-  padding: 4px;
   cursor: pointer;
   color: white;
   transform: scale(1.5);
@@ -309,5 +308,10 @@ html {
 @media only screen and (min-width: 300px) {
   #aboutMeContainer{
     padding: 3rem;
+  }
+
+  .hamburger {
+    top: 20px;
+    right: 20px;
   }
 }
