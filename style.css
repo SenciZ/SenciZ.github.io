@@ -22,8 +22,8 @@ header {
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 2rem;
-  right: 2rem;
+  top: 3rem;
+  right: 3.5rem;
   cursor: pointer;
   color: white;
   transform: scale(1.5);
@@ -107,7 +107,7 @@ a {
 
 #skillItemContainer {
   display: flex;
-  max-width: 800px;
+  max-width: 700px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
@@ -123,8 +123,8 @@ a {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  min-width: 9rem;
-  max-width: 9rem;
+  min-width: 2rem;
+  max-width: 7rem;
 }
 
 .itemHolder img {
@@ -145,38 +145,35 @@ a {
 #projectsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 1250px;
   min-width: 80%;
   color: #fff;
   font-weight: 300;
-  padding: 4rem 3rem;
 }
 
 .projectHolder {
-  max-width: 30%;
-  min-width: 30rem;
-  padding: 3rem 3rem;
-  margin: 1rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
 }
+
 .projectHolder img {
   max-width: 100%;
 }
+
+
 
 html {
   scroll-behavior: smooth;
 }
 
-.projectHolder div {
-  align-self: flex-start;
-  max-width: 90%;
-}
+
 .projectHolder p {
   text-align: center;
-  width: 75%;
   align-self: center;
 }
 
@@ -188,7 +185,7 @@ html {
 #projectBoxContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .myName {
@@ -211,7 +208,7 @@ html {
 
 .myEmail {
   color: var(--Rorange);
-  font-size: 35px;
+  font-size: clamp(1vh, 25px, 3rem);
   font-weight: 300;
 }
 
@@ -243,7 +240,7 @@ html {
 .page-containers-navy {
   background-color: var(--Navy);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,8 +307,4 @@ html {
     padding: 3rem;
   }
 
-  .hamburger {
-    top: 20px;
-    right: 20px;
-  }
 }
