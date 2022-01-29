@@ -1,23 +1,36 @@
-// let seeWorkBtn = document.getElementById("workBtn")
-// seeWorkBtn.addEventListener("click", function(e){
-//     let position = document.querySelector(".workPage").offsetTop;
-//     window.scrollTo(0, position,);
-// })
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+const aboutLink = document.getElementById("paboutLink")
+const skillsLink = document.getElementById("skillsLink")
+const homeLink = document.getElementById("homeLink")
+const contactLink = document.getElementById("contactLink")
+const hamburgerMenu =document.getElementById('hamburgerMenu')
 
-// let aboutMeBtn = document.getElementById("aboutBtn")
-// aboutMeBtn.addEventListener("click", function(e){
-//     let position = document.querySelector(".aboutPage").offsetTop;
-//     window.scrollTo(0, position,);
-// })
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    document.getElementById('hamburger').innerHTML='menu'
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    document.getElementById('hamburger').innerHTML='close'
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
 
-// let techBtn = document.getElementById("techBtn")
-// techBtn.addEventListener("click", function(e){
-//     let position = document.querySelector(".techPage").offsetTop;
-//     window.scrollTo(0, position,);
-// })
+hamburger.addEventListener("click", toggleMenu);
 
-// let contactBtn = document.getElementById("contactBtn")
-// contactBtn.addEventListener("click", function(e){
-//     let position = document.querySelector(".contactPage").offsetTop;
-//     window.scrollTo(0, position,);
-// })
+hamburgerMenu.addEventListener('click', ()=>{
+        menu.classList.remove("showMenu");
+        document.getElementById('hamburger').innerHTML='menu'
+
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+})
+
+
