@@ -155,9 +155,12 @@ a {
 .projectHolder {
   width: 100%;
   max-width: 400px;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+
 }
 
 .projectHolder img {
@@ -179,12 +182,14 @@ html {
 #projectsContainer {
   display: flex;
   flex-direction: column;
+
 }
 
 #projectBoxContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
 }
 
 .myName {
@@ -219,7 +224,7 @@ html {
 
 .btnHolder {
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 
@@ -229,6 +234,8 @@ html {
   border: solid 1px white;
   border-radius: 5px;
   padding: 0.5rem 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   color: white;
   cursor: pointer;
 }
