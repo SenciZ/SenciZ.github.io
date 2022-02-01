@@ -14,10 +14,7 @@
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
 }
-header {
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
+
 
 .hamburger {
   position: fixed;
@@ -151,7 +148,8 @@ a {
   min-width: 80%;
   color: #fff;
   font-weight: 300;
-  padding-top: 9rem;
+  padding-top: 9rem !important;
+  padding-bottom: 9rem !important; 
 }
 
 .projectHolder {
