@@ -32,3 +32,5 @@ hamburgerMenu.addEventListener("click", () => {
   closeIcon.style.display = "none";
   menuIcon.style.display = "block";
 });
+
+axios.get("https://devduds.herokuapp.com/").then((res) => console.log("hit"));
