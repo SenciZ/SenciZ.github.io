@@ -50,15 +50,15 @@
   opacity: 0;
   transition: all 200ms;
 }
+.showMenu {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .menuItem {
   padding-right: 10px;
 }
 
-.showMenu {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 a {
   color: white;
