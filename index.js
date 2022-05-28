@@ -9,6 +9,15 @@ const homeLink = document.getElementById("homeLink");
 const contactLink = document.getElementById("contactLink");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 
+gsap.from(".myName", { duration: 1, opacity: "0", y: -500, ease: "bounce" });
+gsap.from(".myTitle", {
+  duration: 1,
+  opacity: "0",
+  y: -500,
+  ease: "bounce",
+  delay: 0.125,
+});
+
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
