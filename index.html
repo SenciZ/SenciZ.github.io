@@ -25,24 +25,24 @@
 </head>
 
 <body>
-    <header id='home' class="page-containers-navy video">
-        <span id='hamburger' class="hamburger material-icons-outlined">menu</span>
-        <nav>
-            <ul id='hamburgerMenu' class="menu">
-                <li><a id='homeLink' class="menuItem" href="#home">Home</a></li>
-                <li><a id='aboutLink' class="menuItem" href="#aboutMe">About Me</a></li>
-                <li><a id='skillsLink' class="menuItem" href="#skillsPage">Skills</a></li>
-                <li><a id='projectsLink' class="menuItem" href="#projectsPage">Pojects</a></li>
-                <li><a id='contactLink' class="menuItem" href="#contactPage">Contact</a></li>
-            </ul>
-        </nav>
+    <span id='hamburger' class="hamburger material-icons-outlined">menu</span>
+    <nav>
+        <ul id='hamburgerMenu' class="menu">
+            <li><a id='homeLink' class="menuItem" href="#home">Home</a></li>
+            <li><a id='aboutLink' class="menuItem" href="#aboutMe">About Me</a></li>
+            <li><a id='skillsLink' class="menuItem" href="#skillsPage">Skills</a></li>
+            <li><a id='projectsLink' class="menuItem" href="#projectsPage">Pojects</a></li>
+            <li><a id='contactLink' class="menuItem" href="#contactPage">Contact</a></li>
+        </ul>
+    </nav>
+    <header id='home' class="page-containers-navy video homePin">
         <div class="introContainer">
             <h1 class="myName">Senad Zenkovic</h1>
             <h2 class="myTitle"><em>Web Developer</em></h2>
         </div>
     </header>
 
-    <article id='aboutMe' class="page-containers-orange">
+    <article id='aboutMe' class="aboutMePin page-containers-orange">
         <div id="aboutMeContainer" class="boutMe">
             <h1>About Me</h1>
             <p>
@@ -67,7 +67,7 @@
 
     </article>
 
-    <article id='skillsPage' class="page-containers-navy">
+    <article id='skillsPage' class="skillsPin page-containers-navy">
         <div id="skillsContainer">
             <h1>Skills</h1>
             <div id="skillItemContainer">
@@ -113,7 +113,7 @@
 
     </article>
 
-    <article id='projectsPage' class="page-containers-orange">
+    <article id='projectsPage' class="projectsPin page-containers-orange">
         <div id="projectsContainer">
             <h2>Projects</h2>
 
@@ -164,7 +164,7 @@
     </article>
 
 
-    <article id="contactPage">
+    <article id="contactPage" class="contactPin">
         <div class="page-containers-navy">
             <h3 class="myName">Senad Zenkovic</h3>
             <h2 class="myEmail"><em>senadzenkovic@gmail.com</em></h2>
@@ -182,6 +182,7 @@
 
     </article>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 

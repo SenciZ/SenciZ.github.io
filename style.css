@@ -14,7 +14,7 @@
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
 }
-
+body
 .hamburger {
   position: fixed;
   z-index: 100;
@@ -32,6 +32,8 @@
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   transform: translateY(-120%);
   transition: transform 0.2s;
@@ -39,7 +41,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 1099;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   list-style: none;
@@ -280,8 +282,9 @@ html {
   display: flex;
   justify-content: space-between;
 }
-
-
+article{
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.7) ;
+}
 
 @media only screen and (max-width: 300px) {
   #aboutMeContainer {

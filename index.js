@@ -9,11 +9,58 @@ const homeLink = document.getElementById("homeLink");
 const contactLink = document.getElementById("contactLink");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.defaults({ ease: "none", duration: 2 });
+
+// const tl = gsap.timeline();
+// tl.from(".aboutMePin", { xPercent: -100 })
+//   .from(".skillsPin", { xPercent: 100 })
+//   .from(".projectsPin", { yPercent: -100 })
+//   .from(".contactPin", { xPercent: 100 });
+
+ScrollTrigger.create({
+  trigger: ".homePin",
+  start: "top top",
+  pinSpacing: false,
+  pin: true,
+  scrub: 2,
+});
+ScrollTrigger.create({
+  trigger: ".aboutMePin",
+  start: "top top",
+  pinSpacing: false,
+  pin: true,
+  scrub: 2,
+});
+ScrollTrigger.create({
+  trigger: ".skillsPin",
+  start: "top top",
+  pinSpacing: false,
+  pin: true,
+  scrub: 2,
+});
+ScrollTrigger.create({
+  trigger: ".projectsPin",
+  start: "bottom top",
+  pinSpacing: false,
+  pin: true,
+  end: "+=3000",
+  scrub: 2,
+});
+ScrollTrigger.create({
+  trigger: ".contactPin",
+  start: "top top",
+  pinSpacing: false,
+  pin: true,
+  scrub: 2,
+});
+
 gsap.from(".myName", { duration: 1, opacity: "0", y: -500, ease: "bounce" });
 gsap.from(".myTitle", {
   duration: 1,
   opacity: "0",
-  y: -500,
+  filter: blur("40px"),
+  // y: -500,
   ease: "bounce",
   delay: 0.125,
 });
@@ -41,5 +88,3 @@ hamburgerMenu.addEventListener("click", () => {
   closeIcon.style.display = "none";
   menuIcon.style.display = "block";
 });
-
-axios.get("https://devduds.herokuapp.com/").then((res) => console.log("hit"));
