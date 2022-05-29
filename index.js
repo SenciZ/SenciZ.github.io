@@ -41,7 +41,7 @@ ScrollTrigger.create({
 });
 ScrollTrigger.create({
   trigger: ".projectsPin",
-  start: "bottom top",
+  start: "bottom 100%",
   pinSpacing: false,
   pin: true,
   end: "+=3000",
